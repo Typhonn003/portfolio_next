@@ -1,26 +1,17 @@
 import { useEffect, useState } from "react";
 import * as Icon from "react-icons/bs";
-import * as Img from "../../img";
+import { parseCookies, setCookie } from "nookies";
 
 export const ThemeButton = () => {
   const [isDarkMode, setIsDarkMode] = useState(() => {
-    const storedDarkMode = localStorage.getItem("isDarkMode");
-    return storedDarkMode === "true";
+    const cookies = parseCookies();
+    const storedTheme = cookies["isDarkMode"];
+    return storedTheme === "true";
   });
 
   useEffect(() => {
     document.documentElement.classList.toggle("dark", isDarkMode);
-    localStorage.setItem("isDarkMode", String(isDarkMode));
-
-    const favicon = document.querySelector<HTMLLinkElement>(
-      'link[rel="shortcut icon"]'
-    );
-
-    if (isDarkMode) {
-      favicon!.href = Img.favIconDark;
-    } else {
-      favicon!.href = Img.favIcon;
-    }
+    setCookie(null, "isDarkMode", String(isDarkMode));
   }, [isDarkMode]);
 
   const toggleDarkMode = () => {
