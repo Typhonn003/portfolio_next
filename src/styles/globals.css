@@ -2,26 +2,41 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 96px;
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+  h1,
+  h2 {
+    font-family: "Poppins", sans-serif;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@layer components {
+  .container-width {
+    @apply w-[90%];
+  }
+
+  .swiper-custom-pagination > span {
+    @apply bg-light-blue12 dark:bg-dark-blue12;
+  }
+
+  .swiper-custom-prev {
+    @apply text-light-blue12 dark:text-dark-blue12;
+  }
+
+  .swiper-custom-next {
+    @apply text-light-blue12 dark:text-dark-blue12;
+  }
+
+  .btn-style {
+    @apply text-light-blue12 bg-gradient-to-b from-light-blue2 to-light-blue4 hover:from-light-blue3 hover:to-light-blue5 dark:text-dark-blue12 dark:bg-gradient-to-t dark:from-dark-blue2 dark:to-dark-blue4 hover:dark:from-dark-blue3 hover:dark:to-dark-blue5;
+  }
+}
+
+.active-scroll-spy {
+  width: 70px;
+  height: 2px;
 }
