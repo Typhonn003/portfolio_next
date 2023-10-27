@@ -1,13 +1,14 @@
 import * as Icon from "react-icons/bs";
 import { NavBar } from "./NavBar";
 import { TypeAnimation } from "react-type-animation";
+import { poppins } from "@/fonts"
 
 export const Header = () => {
   return (
     <header className="container-width m-auto py-10 lg:h-full lg:py-0 lg:flex lg:flex-col lg:justify-between lg:w-full">
       <div>
         <div>
-          <h1 className="text-4xl font-bold mb-2 lg:text-5xl">Diego Lima</h1>
+          <h1 className={`${poppins.className} text-4xl font-bold mb-2 lg:text-5xl`}>Diego Lima</h1>
           <TypeAnimation
             sequence={[
               "Desenvolvedor Front End",
@@ -18,12 +19,12 @@ export const Header = () => {
               2000,
             ]}
             wrapper="h2"
-            className="text-xl font-semibold text-light-blue11 mb-4 dark:text-dark-blue11 lg:text-2xl"
+            className={`${poppins.className} text-xl font-semibold text-light-blue11 mb-4 dark:text-dark-blue11 lg:text-2xl`}
             speed={50}
             repeat={Infinity}
           />
         </div>
-        <p className="w-[90%] mb-6 opacity-70 md:w-[460px] lg:w-[90%] xl:w-[75%]">
+        <p className="w-[88%] mb-6 opacity-70 md:w-[480px] lg:w-[85%] xl:w-[75%]">
           Meu objetivo é criar produtos acessíveis e inclusivos, proporcionando
           experiências digitais de qualidade para a web.
         </p>

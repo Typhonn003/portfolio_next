@@ -17,10 +17,10 @@ export const Footer = () => {
           Construído em{" "}
           <a
             target="_blank"
-            href="https://react.dev/"
+            href="https://nextjs.org/"
             className="font-medium text-light-blue12 hover:underline hover:text-light-blue11 dark:text-dark-blue12 dark:hover:text-dark-blue11"
           >
-            React
+            Next.js
           </a>{" "}
           e{" "}
           <a
