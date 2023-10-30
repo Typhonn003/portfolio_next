@@ -41,7 +41,7 @@ export const projectData: ProjectData[] = [
   {
     id: 3,
     img: Img.projectNk,
-    name: "Nu Klone",
+    name: "Nu Klone V2",
     description:
       "O projeto é uma aplicação simples de finanças, permitindo acesso à dashboard, cadastro de entradas e saídas de valores, além de visualização do saldo total em conta.",
     techs: ["React", "TypeScript", "CSS3"],
