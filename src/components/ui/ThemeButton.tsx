@@ -1,35 +1,28 @@
-import { useEffect, useState } from "react";
 import * as Icon from "react-icons/bs";
-import { parseCookies, setCookie } from "nookies";
+import { useTheme } from "next-themes";
+import { useEffect, useState } from "react";
 
 export const ThemeButton = () => {
-  const [isDarkMode, setIsDarkMode] = useState(() => {
-    const cookies = parseCookies();
-    const storedTheme = cookies["isDarkMode"];
-    return storedTheme === "true";
-  });
-  const [isClient, setIsClient] = useState(false)
- 
-  useEffect(() => {
-    setIsClient(true)
-  }, [])
+  const { theme, setTheme } = useTheme();
+  const [mounted, setMounted] = useState<boolean>(false);
 
   useEffect(() => {
-    document.documentElement.classList.toggle("dark", isDarkMode);
-    setCookie(null, "isDarkMode", String(isDarkMode));
-  }, [isDarkMode]);
+    setMounted(true);
+  }, []);
 
-  const toggleDarkMode = () => {
-    setIsDarkMode((oldValue) => !oldValue);
+  if (!mounted) return null;
+
+  const toggleTheme = () => {
+    theme === "dark" ? setTheme("light") : setTheme("dark");
   };
 
   return (
     <button
-      onClick={toggleDarkMode}
+      onClick={toggleTheme}
       aria-label="Mude o tema da página"
       className="btn-style border border-light-blue7 text-2xl p-2 rounded-full fixed top-4 right-4 z-50 hover:border-light-blue8 dark:border-dark-blue7 dark:hover:border-dark-blue8 lg:shadow-md lg:top-6 lg:right-6"
     >
-      {isDarkMode && isClient ? <Icon.BsFillMoonStarsFill /> : <Icon.BsFillSunFill />}
+      {theme === "dark" ? <Icon.BsFillMoonStarsFill /> : <Icon.BsFillSunFill />}
     </button>
   );
 };
