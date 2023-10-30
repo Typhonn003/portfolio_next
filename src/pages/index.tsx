@@ -10,6 +10,19 @@ const Home = () => {
     >
       <Head>
         <title>Diego Lima</title>
+        <meta
+          name="description"
+          content="Diego Lima é um desenvolvedor Full Stack júnior que busca criar produtos acessíveis e inclusivos, proporcionando experiências digitais de qualidade para a web."
+        />
+        <meta name="author" content="Diego Lima" />
+        <meta property="og:title" content="Diego Lima" />
+        <meta property="og:site_name" content="Diego Lima" />
+        <meta property="og:type" content="website" />
+        <meta property="og:locale" content="pt_BR" />
+        <meta
+          property="og:description"
+          content="Diego Lima é um desenvolvedor Full Stack júnior que busca criar produtos acessíveis e inclusivos, proporcionando experiências digitais de qualidade para a web."
+        />
       </Head>
       <div className="lg:min-h-screen lg:max-w-7xl lg:m-auto lg:px-16">
         <div className="lg:flex lg:justify-between lg:gap-4">
