@@ -7,11 +7,6 @@
     scroll-behavior: smooth;
     scroll-padding-top: 96px;
   }
-
-  h1,
-  h2 {
-    font-family: "Poppins", sans-serif;
-  }
 }
 
 @layer components {

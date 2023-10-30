@@ -17,7 +17,7 @@ export const techData: TechData = {
     color: "#3595cf",
     name: "CSS3",
   },
-  javaScript: {
+  javascript: {
     logo: <RiJavascriptFill />,
     color: "#e8d44d",
     name: "JavaScript",
@@ -27,24 +27,29 @@ export const techData: TechData = {
     color: "#5bd3f3",
     name: "React",
   },
-  typeScript: {
+  typescript: {
     logo: <IconBi.BiLogoTypescript />,
     color: "#2f74c0",
     name: "TypeScript",
+  },
+  next: {
+    logo: <IconSi.SiNextdotjs />,
+    color: "#181818",
+    name: "Next.js",
   },
   styledComponents: {
     logo: <IconSi.SiStyledcomponents />,
     color: "#db7290",
     name: "Styled Components",
   },
-  tailWind: {
+  tailwind: {
     logo: <IconSi.SiTailwindcss />,
     color: "#36b7f0",
     name: "Tailwind CSS",
   },
   stitches: {
     logo: <RxStitchesLogo />,
-    color: "#000000",
+    color: "#1a1a1a",
     name: "Stitches",
   },
   node: {
@@ -54,13 +59,13 @@ export const techData: TechData = {
   },
   express: {
     logo: <IconSi.SiExpress />,
-    color: "#313131",
+    color: "#282828",
     name: "Express.js",
   },
   nest: {
     logo: <IconSi.SiNestjs />,
     color: "#d9224c",
-    name: "NestJS",
+    name: "Nest.js",
   },
   postgreSql: {
     logo: <IconBi.BiLogoPostgresql />,
