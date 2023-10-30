@@ -6,7 +6,7 @@ import Head from "next/head";
 const Home = () => {
   return (
     <div
-      className={`${inter.className} bg-light-blue2 text-light-blue12 dark:bg-dark-blue2 dark:text-dark-blue12`}
+      className={`${inter.className} bg-light-blue2 text-light-blue12 dark:bg-dark-blue2 dark:text-dark-blue12 bg-mobile bg-no-repeat bg-contain md:bg-tablet lg:bg-desktop lg:bg-fixed`}
     >
       <Head>
         <title>Diego Lima</title>

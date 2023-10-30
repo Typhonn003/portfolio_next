@@ -20,8 +20,10 @@ const config: Config = {
       screens: {
         xs: "520px",
       },
-      fontFamily: {
-        poppins: ["Poppins", "sans-serif"],
+      backgroundImage: {
+        mobile: "url('/wallpaper-mobile.png')",
+        tablet: "url('/wallpaper-tablet.png')",
+        desktop: "url('/wallpaper-desktop.png')",
       },
     },
   },

@@ -3,7 +3,7 @@ import { Header } from "./layout/Header";
 import { Projects } from "./sections/Projects";
 import { Techs } from "./sections/Techs";
 import { Footer } from "./layout/Footer";
-import { BackToTopButton } from "./ui/BackToTopButton";
-import { ThemeButton } from "./ui/ThemeButton";
+import { BackToTopButton } from "./buttons/BackToTopButton";
+import { ThemeButton } from "./buttons/ThemeButton";
 
 export { About, Header, Projects, Techs, Footer, BackToTopButton, ThemeButton };

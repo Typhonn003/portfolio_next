@@ -1,14 +1,19 @@
 import * as Icon from "react-icons/bs";
 import { NavBar } from "./NavBar";
 import { TypeAnimation } from "react-type-animation";
-import { poppins } from "@/fonts"
+import { poppins } from "@/fonts";
+import { NetworkLink } from "../buttons/NetworkLink";
 
 export const Header = () => {
   return (
     <header className="container-width m-auto py-10 lg:h-full lg:py-0 lg:flex lg:flex-col lg:justify-between lg:w-full">
       <div>
         <div>
-          <h1 className={`${poppins.className} text-4xl font-bold mb-2 lg:text-5xl`}>Diego Lima</h1>
+          <h1
+            className={`${poppins.className} text-4xl font-bold mb-2 lg:text-5xl`}
+          >
+            Diego Lima
+          </h1>
           <TypeAnimation
             sequence={[
               "Desenvolvedor Front End",
@@ -33,26 +38,22 @@ export const Header = () => {
       <nav aria-label="Lista de links para as minhas redes">
         <ul className="flex gap-4">
           <li>
-            <a
-              className="text-3xl lg:btn-style lg:border lg:border-light-blue7 lg:text-base lg:font-medium lg:flex lg:items-center lg:gap-2 lg:px-5 lg:py-2 lg:rounded-md lg:hover:border-light-blue8 lg:dark:border-dark-blue7 lg:dark:hover:border-dark-blue8"
+            <NetworkLink
+              title="GitHub"
               href="https://github.com/typhonn003"
-              target="_blank"
               aria-label="Acesse meu perfil do GitHub"
             >
-              <span className="hidden lg:block">GitHub</span>
               <Icon.BsGithub />
-            </a>
+            </NetworkLink>
           </li>
           <li>
-            <a
-              className="text-3xl lg:btn-style lg:border lg:border-light-blue7 lg:text-base lg:font-medium lg:flex lg:items-center lg:gap-2 lg:px-5 lg:py-2 lg:rounded-md lg:hover:border-light-blue8 lg:dark:border-dark-blue7 lg:dark:hover:border-dark-blue8"
+            <NetworkLink
+              title="LinkedIn"
               href="https://www.linkedin.com/in/typhonn003/"
-              target="_blank"
               aria-label="Acesse meu perfil do LinkedIn"
             >
-              <span className="hidden lg:block">LinkedIn</span>
               <Icon.BsLinkedin />
-            </a>
+            </NetworkLink>
           </li>
         </ul>
       </nav>
