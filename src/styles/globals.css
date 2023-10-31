@@ -27,7 +27,7 @@
   }
 
   .btn-style {
-    @apply text-light-blue12 bg-gradient-to-b from-light-blue2 to-light-blue4 hover:from-light-blue3 hover:to-light-blue5 dark:text-dark-blue12 dark:bg-gradient-to-t dark:from-dark-blue2 dark:to-dark-blue4 hover:dark:from-dark-blue3 hover:dark:to-dark-blue5;
+    @apply bg-gradient-to-b from-light-blue2 to-light-blue4 text-light-blue12 hover:from-light-blue3 hover:to-light-blue5 dark:bg-gradient-to-t dark:from-dark-blue2 dark:to-dark-blue4 dark:text-dark-blue12 hover:dark:from-dark-blue3 hover:dark:to-dark-blue5;
   }
 }
 
