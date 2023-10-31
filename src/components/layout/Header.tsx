@@ -6,11 +6,11 @@ import { NetworkLink } from "../buttons/NetworkLink";
 
 export const Header = () => {
   return (
-    <header className="container-width m-auto py-10 lg:h-full lg:py-0 lg:flex lg:flex-col lg:justify-between lg:w-full">
+    <header className="container-width m-auto py-10 lg:flex lg:h-full lg:w-full lg:flex-col lg:justify-between lg:py-0">
       <div>
         <div>
           <h1
-            className={`${poppins.className} text-4xl font-bold mb-2 lg:text-5xl`}
+            className={`${poppins.className} mb-2 text-4xl font-bold lg:text-5xl`}
           >
             Diego Lima
           </h1>
@@ -24,12 +24,12 @@ export const Header = () => {
               2000,
             ]}
             wrapper="h2"
-            className={`${poppins.className} text-xl font-semibold text-light-blue11 mb-4 dark:text-dark-blue11 lg:text-2xl`}
+            className={`${poppins.className} mb-4 text-xl font-semibold text-light-blue11 dark:text-dark-blue11 lg:text-2xl`}
             speed={50}
             repeat={Infinity}
           />
         </div>
-        <p className="w-[88%] mb-6 opacity-70 md:w-[480px] lg:w-[85%] xl:w-[75%]">
+        <p className="mb-6 w-[88%] opacity-70 md:w-[480px] lg:w-[85%] xl:w-[75%]">
           Meu objetivo é criar produtos acessíveis e inclusivos, proporcionando
           experiências digitais de qualidade para a web.
         </p>

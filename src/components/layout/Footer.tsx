@@ -1,13 +1,13 @@
 export const Footer = () => {
   return (
-    <footer className="container-width m-auto text-center text-sm leading-normal text-light-blue12/70 pb-10 dark:text-dark-blue12/70 lg:w-full lg:text-left lg:pb-0">
+    <footer className="container-width m-auto pb-10 text-center text-sm leading-normal text-light-blue12/70 dark:text-dark-blue12/70 lg:w-full lg:pb-0 lg:text-left">
       <div className="lg:flex lg:flex-wrap">
         <p className="lg:mr-1">
           Desenvolvido por{" "}
           <a
             target="_blank"
             href="https://www.linkedin.com/in/typhonn003/"
-            className="font-medium text-light-blue12 hover:underline hover:text-light-blue11 dark:text-dark-blue12 dark:hover:text-dark-blue11"
+            className="font-medium text-light-blue12 hover:text-light-blue11 hover:underline dark:text-dark-blue12 dark:hover:text-dark-blue11"
           >
             Diego Lima
           </a>
@@ -18,7 +18,7 @@ export const Footer = () => {
           <a
             target="_blank"
             href="https://nextjs.org/"
-            className="font-medium text-light-blue12 hover:underline hover:text-light-blue11 dark:text-dark-blue12 dark:hover:text-dark-blue11"
+            className="font-medium text-light-blue12 hover:text-light-blue11 hover:underline dark:text-dark-blue12 dark:hover:text-dark-blue11"
           >
             Next.js
           </a>{" "}
@@ -26,7 +26,7 @@ export const Footer = () => {
           <a
             target="_blank"
             href="https://tailwindcss.com/"
-            className="font-medium text-light-blue12 hover:underline hover:text-light-blue11 dark:text-dark-blue12 dark:hover:text-dark-blue11"
+            className="font-medium text-light-blue12 hover:text-light-blue11 hover:underline dark:text-dark-blue12 dark:hover:text-dark-blue11"
           >
             Tailwind CSS
           </a>
@@ -37,7 +37,7 @@ export const Footer = () => {
           <a
             target="_blank"
             href="https://brittanychiang.com/"
-            className="font-medium text-light-blue12 hover:underline hover:text-light-blue11 dark:text-dark-blue12 dark:hover:text-dark-blue11"
+            className="font-medium text-light-blue12 hover:text-light-blue11 hover:underline dark:text-dark-blue12 dark:hover:text-dark-blue11"
           >
             Brittany C
           </a>

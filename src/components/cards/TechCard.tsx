@@ -9,14 +9,14 @@ export const TechCard = ({ techName }: TechCardProps) => {
 
   return (
     <div
-      className="w-full m-auto flex flex-col gap-4 p-8 rounded-md"
+      className="m-auto flex w-full flex-col gap-4 rounded-md p-8"
       style={{ backgroundColor: color }}
     >
-      <div className="w-full flex justify-center items-center text-white text-9xl drop-shadow-lg">
+      <div className="flex w-full items-center justify-center text-9xl text-white drop-shadow-lg">
         {logo}
       </div>
-      <div className="h-20 flex justify-center items-center text-sha">
-        <h2 className="text-white text-2xl font-bold text-center drop-shadow-lg">
+      <div className="text-sha flex h-20 items-center justify-center">
+        <h2 className="text-center text-2xl font-bold text-white drop-shadow-lg">
           {name}
         </h2>
       </div>

@@ -56,11 +56,11 @@ export const Techs = () => {
           </SwiperSlide>
         ))}
       </Swiper>
-      <div className="container-width m-auto max-w-md flex justify-between lg:w-full">
+      <div className="container-width m-auto flex max-w-md justify-between lg:w-full">
         <button className="swiper-custom-prev text-4xl">
           <Icon.SlArrowLeft />
         </button>
-        <div className="swiper-custom-pagination max-w-[65%] flex flex-wrap gap-2 justify-center self-center xs:max-w-full" />
+        <div className="swiper-custom-pagination flex max-w-[65%] flex-wrap justify-center gap-2 self-center xs:max-w-full" />
         <button className="swiper-custom-next text-4xl">
           <Icon.SlArrowRight />
         </button>
