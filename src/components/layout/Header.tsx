@@ -41,6 +41,7 @@ export const Header = () => {
             <NetworkLink
               title="GitHub"
               href="https://github.com/typhonn003"
+              target="_blank"
               aria-label="Acesse meu perfil do GitHub"
             >
               <Icon.BsGithub />
@@ -49,6 +50,7 @@ export const Header = () => {
           <li>
             <NetworkLink
               title="LinkedIn"
+              target="_blank"
               href="https://www.linkedin.com/in/typhonn003/"
               aria-label="Acesse meu perfil do LinkedIn"
             >
