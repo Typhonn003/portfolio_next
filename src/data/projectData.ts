@@ -10,7 +10,7 @@ export const projectData: ProjectData[] = [
       "A aplicação possibilita o cadastro e login de usuários, com acesso restrito à dashboard mediante autenticação, além de permitir a adição de tecnologias personalizadas ao perfil do usuário.",
     techs: ["Next.js", "TypeScript", "Tailwind CSS"],
     links: {
-      demonstration: "tech-hub-next.vercel.app",
+      demonstration: "https://tech-hub-next.vercel.app",
       repository: "https://github.com/Typhonn003/tech_hub_next",
     },
   },
@@ -84,18 +84,6 @@ export const projectData: ProjectData[] = [
     links: {
       demonstration: "https://react-entrega-hamburgueria-v2-ty.vercel.app/",
       repository: "https://github.com/Typhonn003/react-burguer-kenzie/",
-    },
-  },
-  {
-    id: 7,
-    img: Img.projectOm,
-    name: "Open Music",
-    description:
-      "Um projeto simples para praticar a criação de elementos pelo DOM, no qual são listadas algumas músicas e o usuário pode pesquisar pelo valor ou pelas tags disponíveis.",
-    techs: ["HTML5", "JavaScript", "CSS3"],
-    links: {
-      demonstration: "https://typhonn003.github.io/open_music/",
-      repository: "https://github.com/Typhonn003/open_music",
     },
   },
 ];
