@@ -1,20 +1,34 @@
-import type { Config } from 'tailwindcss'
+import type { Config } from "tailwindcss";
+import { blue, blueDark } from "@radix-ui/colors";
 
 const config: Config = {
   content: [
-    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
+      colors: {
+        light: {
+          ...blue,
+        },
+        dark: {
+          ...blueDark,
+        },
+      },
+      screens: {
+        xs: "520px",
+      },
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        mobile: "url('/wallpaper-mobile.png')",
+        tablet: "url('/wallpaper-tablet.png')",
+        desktop: "url('/wallpaper-desktop.png')",
       },
     },
   },
+  darkMode: "class",
   plugins: [],
-}
-export default config
+};
+
+export default config;

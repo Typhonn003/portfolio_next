@@ -1,0 +1,18 @@
+export const techList: string[] = [
+  "html",
+  "css",
+  "javascript",
+  "react",
+  "typescript",
+  "next",
+  "styledComponents",
+  "tailwind",
+  "stitches",
+  "node",
+  "express",
+  "nest",
+  "postgreSql",
+  "prisma",
+  "python",
+  "django",
+];
