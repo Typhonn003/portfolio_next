@@ -10,6 +10,7 @@ const Home = () => {
     >
       <Head>
         <title>Diego Lima</title>
+        <link rel="shortcut icon" href="/images/favicon.ico" />
         <meta
           name="description"
           content="Diego Lima é um desenvolvedor Full Stack júnior que busca criar produtos acessíveis e inclusivos, proporcionando experiências digitais de qualidade para a web."
