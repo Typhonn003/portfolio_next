@@ -2,7 +2,6 @@ import { AiFillHtml5 } from "react-icons/ai";
 import * as IconBi from "react-icons/bi";
 import * as IconFa from "react-icons/fa";
 import * as IconSi from "react-icons/si";
-import { RxStitchesLogo } from "react-icons/rx";
 import { RiJavascriptFill } from "react-icons/ri";
 import { TechData } from "../types/techTypes";
 
@@ -46,11 +45,6 @@ export const techData: TechData = {
     logo: <IconSi.SiTailwindcss />,
     color: "#36b7f0",
     name: "Tailwind CSS",
-  },
-  stitches: {
-    logo: <RxStitchesLogo />,
-    color: "#1a1a1a",
-    name: "Stitches",
   },
   node: {
     logo: <IconFa.FaNodeJs />,

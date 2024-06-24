@@ -5,6 +5,8 @@ import projectHl from "./project-hl.jpg";
 import projectMsa from "./project-msa.jpg";
 import projectNk from "./project-nk.jpg";
 import projectTh from "./project-th.jpg";
+import projectHbf from "./project-hbf.jpg";
+import projectHbb from "./project-hbb.jpg";
 
 export {
   projectBk,
@@ -14,4 +16,6 @@ export {
   projectMsa,
   projectNk,
   projectTh,
+  projectHbf,
+  projectHbb,
 };

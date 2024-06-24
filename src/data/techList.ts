@@ -7,7 +7,6 @@ export const techList: string[] = [
   "next",
   "styledComponents",
   "tailwind",
-  "stitches",
   "node",
   "express",
   "nest",
