@@ -4,6 +4,38 @@ import * as Img from "../../public";
 export const projectData: ProjectData[] = [
   {
     id: 0,
+    img: Img.projectHbf,
+    name: "Human Benchmark - Front End",
+    description:
+      "Esta aplicação permite que os usuários se registrem, façam login e joguem três jogos diferentes desenvolvidos em canvas, além de registrar suas pontuações quando estiverem autenticados.",
+    techs: [
+      "Next.js",
+      "React.js",
+      "TypeScript",
+      "Zod",
+      "Zustand",
+      "Axios",
+      "Tailwind CSS",
+    ],
+    links: {
+      demonstration: "https://humanbenchmark.sambacore.com/",
+      repository: "https://github.com/Typhonn003/human_benchmark",
+    },
+  },
+  {
+    id: 1,
+    img: Img.projectHbb,
+    name: "Human Benchmark - Back End",
+    description:
+      "Esta API foi construída exclusivamente para atender a nossa aplicação front-end. Ela permite realizar um CRUD completo de usuários, pontuações e jogos, além de oferecer rotas autenticadas para usuários e administradores.",
+    techs: ["Node.js", "Express.js", "TypeScript", "Prisma", "Zod"],
+    links: {
+      demonstration: null,
+      repository: "https://github.com/Typhonn003/human_benchmark_api",
+    },
+  },
+  {
+    id: 2,
     img: Img.projectTh,
     name: "Tech Hub V3",
     description:
@@ -15,7 +47,7 @@ export const projectData: ProjectData[] = [
     },
   },
   {
-    id: 1,
+    id: 3,
     img: Img.projectHl,
     name: "HubLinkup - Back End",
     description:
@@ -27,7 +59,7 @@ export const projectData: ProjectData[] = [
     },
   },
   {
-    id: 2,
+    id: 4,
     img: Img.projectLom,
     name: "League of Match",
     description:
@@ -39,7 +71,7 @@ export const projectData: ProjectData[] = [
     },
   },
   {
-    id: 3,
+    id: 5,
     img: Img.projectNk,
     name: "Nu Klone V2",
     description:
@@ -51,7 +83,7 @@ export const projectData: ProjectData[] = [
     },
   },
   {
-    id: 4,
+    id: 6,
     img: Img.projectGcc,
     name: "Gimba Cupons Clone",
     description:
@@ -63,7 +95,7 @@ export const projectData: ProjectData[] = [
     },
   },
   {
-    id: 5,
+    id: 7,
     img: Img.projectMsa,
     name: "Motor Shop - Back End",
     description:
@@ -75,7 +107,7 @@ export const projectData: ProjectData[] = [
     },
   },
   {
-    id: 6,
+    id: 8,
     img: Img.projectBk,
     name: "Burguer Kenzie",
     description:
