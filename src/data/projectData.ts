@@ -18,7 +18,7 @@ export const projectData: ProjectData[] = [
       "Tailwind CSS",
     ],
     links: {
-      demonstration: "https://humanbenchmark.sambacore.com/",
+      demonstration: "https://humanbenchmarknext.vercel.app/",
       repository: "https://github.com/Typhonn003/human_benchmark",
     },
   },
